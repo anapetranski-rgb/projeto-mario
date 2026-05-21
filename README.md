@@ -1,4 +1,5 @@
 🍄 Encanadores Mario & Luigi - Landing Page
+<br>
 Landing Page temática desenvolvida como parte dos desafios do DevClub, focada no universo dos encanadores mais famosos do Reino dos Cogumelos! O projeto consiste em uma página única (One Page) moderna, totalmente responsiva e interativa.
 
 🚀 Tecnologias Utilizadas
