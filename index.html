@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="cabecalho">
+        <img src="./Assets/Img/logo-header.png" alt="logo-cabecalho" />
+        <a>Home</a>
+        <a onclick="mostrarForm()">Fale Conosco</a>
+        <a href="#servicos">Nossos Serviços</a>
+    </div>
+
+    <div class="caixa-principal">
+        <div class="caixa-info-texto">
+            <img src="./Assets/Img/logo.png" alt="Imagem-logo" class="logo-mario" />
+
+            <p>
+                🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! 🔧
+            </p>
+
+            <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+
+            <button onclick="mostrarForm()">Entre em contato</button>
+        </div>
+
+        <div class="caixa-logo-luigi-mario">
+            <img src="./Assets/Img/mario.png" alt="Imagem-Mario-Luigi" class="logo-luigi-mario" />
+        </div>
+    </div>
+
+    <div class="caixa-video">
+        <video src="./Assets/Video/video.mp4" autoplay loop muted></video>
+        <div class="mascara-video"> </div>
+    </div>
+
+    <div class="caixa-link-whatsapp">
+        <a href=https://w.app/dph6qq class="link-whatsapp">
+            <img src="./Assets/Img/whatsapp.png" alt="link-whatsapp" />
+        </a>
+    </div>
+
+    <form class="formulario" 
+        action="https://formcarry.com/s/4Inmz2vfpQh"
+        method="POST"
+        enctype="multipart/form-data">
+        <input placeholder="Seu Nome" type="text" name="Nome"/>
+        <input placeholder="Telefone" type="tel" name="Telefone" />
+        <textarea placeholder="Digite seu problema" name="problema"></textarea>
+        <button>Pedir orçamento</button>
+    </form>
+
+    <div id="servicos" class="secao-servicos">
+        <h2>Nossos Serviços Dedicados</h2>
+
+        <div class="container-cards">
+            <div class="card-servico">
+                <h3>🪠 Desentupimento</h3>
+                <p>Remoção de Plantas Piranha e obstruções que impedem você de viajar pelos canos do Reino.</p>
+            </div>
+
+            <div class="card-servico">
+                <h3>🔎 Caça-Vazamentos</h3>
+                 <p>Detectamos vazamentos invisíveis antes que suas moedas sumam do bolso.</p>
+            </div>
+
+            <div class="card-servico">
+                <h3>🔨 Reparos Gerais</h3>
+                <p>Ajustamos a pressão dos canos para aguentar até a lava dos castelos do Bowser.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mascara-formulario" onclick="esconderForm()"></div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

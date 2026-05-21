@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "mukta", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.caixa-principal {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    justify-content: space-around;
+}
+
+.logo-mario {
+    width: 350px;
+}
+
+button {
+    background: #C51111;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.logo-luigi-mario {
+    height: 500px;
+}
+
+.caixa-info-texto {
+    width: 40%;
+
+}
+
+.caixa-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+video {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.mascara-video {
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg,
+            rgba(10, 12, 16, 0.99) 15%,
+            rgba(10, 12, 16, 0.7) 50%,
+            rgba(10, 12, 16, 0.99) 85%);
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.cabecalho img {
+    width: 70px;
+}
+
+.cabecalho a {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cabecalho a:hover {
+    color: #C51111;
+    transition: 0.5s ease-in-out;
+}
+
+.caixa-link-whatsapp {
+    position: fixed;
+    bottom: 15px;
+    right: 12px;
+    z-index: 1;
+
+}
+
+.link-whatsapp img {
+    width: 60px;
+}
+
+.link-whatsapp {
+    cursor: pointer;
+}
+
+form {
+    background: white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 350px;
+    z-index: 1;
+    top: 40%;
+    left: -340px;
+    transition: 0.8s left ease-in-out;
+}
+
+form input {
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline-color: #18d80f;
+}
+
+form textarea {
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline-color: #18d80f;
+    height: 100px;
+}
+
+.mascara-formulario {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg,
+            rgba(10, 12, 16, 0.99) 15%,
+            rgba(10, 12, 16, 0.7) 50%,
+            rgba(10, 12, 16, 0.99) 85%);
+    visibility: hidden;
+    transition: 1s visibility ease-in-out;
+}
+
+.secao-servicos {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background: rgba(10, 12, 16, 0.85); 
+}
+
+.secao-servicos h2 {
+    color: white;
+    font-size: 36px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #C51111; 
+    padding-bottom: 10px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card-servico {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card-servico:hover {
+    transform: translateY(-10px);
+    border-color: #18d80f; 
+    background: rgba(24, 216, 15, 0.05);
+}
+
+.card-servico h3 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card-servico p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+@media screen and (max-width: 1100px){
+    
+    .logo-mario{
+        display: none;
+    }
+
+    .caixa-principal{
+        padding: 30px;
+        flex-direction: column;
+    }   
+
+    .caixa-info-texto{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .caixa-logo-luigi-mario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-luigi-mario{
+        height: auto;
+        width: 80%;
+        display: flex;
+    }
+
+    .cabecalho{
+        padding: 10px;
+
+    }
+
+    .cabecalho img{
+        width: 40px;
+    }
+
+    .cabecalho a{
+        font-size: 16px;
+    }    
+}
